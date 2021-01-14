@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Programação Web</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilo.css" type="text/css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Página Inicial</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar" aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="textoNavbar">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#rank">Rank</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quiz.html">Jogar</a>
+          </li>
+        </ul>
+      </div>
+</nav>
+   <div id="carouselExampleIndicators" class="carousel slide w-100" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner w-100">
+        <div class="carousel-item active">
+          <img class="d-block imgCarrossel" src="imagem/css.jpg" alt="Primeiro Slide">
+        </div>
+        <div class="carousel-item w-100">
+          <img class="d-block imgCarrossel" src="imagem/js.jpg" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item w-100">
+          <img class="d-block imgCarrossel" src="imagem/html.jpg" alt="Terceiro Slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+
+    <div class="divisor"></div>
+
+    <div class="container espacamento" id="sobre">
+      <div class="row">
+          <div class="col-sm-8">
+            <h2>Inovando no aprender</h2>
+            <p>Tudo começou com um projeto da faculdade que era para entregar, mostrando todos nossos conhecimentos.</p>
+            <p>Mas percebemos que através do Quizz criado, conseguimos absorver melhor o conhecimento sobre conteúdo passados em aula.</p>
+            <p>Pois tínhamos que pesquisar além do material disponibilizado pela faculdade, que muitas das vezes era incompleto e desatualizado. Para assim poder elaborar as perguntas.</p>
+        </div>
+          <div class="col-sm-4">
+              <img class="imgAprender" src="imagem/conhecimento.jpg" />
+          </div>
+      </div>
+    </div>
+    <div class="divisor"></div>
+
+    <div class="container espacamento">
+        <table class="table" id="rank">
+            <thead>
+              <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Pontuação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Bruno Mota de Oliveira</td>
+                <td>13020329</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>João Pedro</td>
+                <td>320</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Pedro João</td>
+                <td>310</td>
+              </tr>
+              <tr>
+                  <th scope="row">4</th>
+                  <td>José Maria</td>
+                  <td>299</td>
+              </tr>
+              <tr>
+                  <th scope="row">5</th>
+                  <td>Maria José</td>
+                  <td>287</td>
+              </tr>
+              <tr>
+                  <th scope="row">5</th>
+                  <td>Paulo Pedro</td>
+                  <td>230</td>
+              </tr>
+              <tr>
+                  <th scope="row">6</th>
+                  <td>Pedro Paulo</td>
+                  <td>215</td>
+              </tr>
+              <tr>
+                  <th scope="row">7</th>
+                  <td>Carlos Henrique</td>
+                  <td>200</td>
+              </tr>
+              <tr>
+                  <th scope="row">8</th>
+                  <td>Henrique Carlos</td>
+                  <td>199</td>
+              </tr>
+              <tr>
+                  <th scope="row">9</th>
+                  <td>Tiago Henrique</td>
+                  <td>130</td>
+              </tr>
+              <tr>
+                  <th scope="row">10</th>
+                  <td>Henrique Tiago</td>
+                  <td>120</td>
+              </tr>   
+            </tbody>
+          </table>
+    </div>
+
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted"> Desenvolvido por Bruno Mota de Oliveira </span>
+      </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,14 @@
+algoritmo "conversor_dolar_real"
+
+var
+    dolares, reais : real
+inicio
+
+      Escreva("Quantos reais eu tenho? ")
+      Leia(reais)
+      
+      dolares <- reais / 2.22
+      
+      Escreva("Você pode ter US$ ", dolares)
+
+fimalgoritmo

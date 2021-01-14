@@ -1,0 +1,44 @@
+
+/* imagem dos cachorros no rodape */
+.pet1{
+    text-align: center;
+
+}
+
+/* imagem de fundo */
+body{
+    background-image:url("imagens/background.jpg");
+    font-family: sans-serif,serif;
+}
+
+/* cor de fundo dos textos */
+.fundo{
+    background-color:azure;
+    text-align: center;
+}
+
+/* colocar menu na mesma linha */
+.menu{
+    display: inline;
+    text-align: center;
+    list-style: none;
+    
+}
+
+/* centralizar menu */
+#menucenter{
+    text-align: center;
+    background-color: azure;
+}
+
+
+/*justificar*/
+.fundotxt{
+    background-color:azure;
+    text-align: justify;
+}
+
+/*centralizar evento */
+.evento{
+    text-align: center;
+}

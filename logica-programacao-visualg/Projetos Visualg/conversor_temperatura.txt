@@ -1,0 +1,13 @@
+algoritmo "conversor_temperatura"
+
+var
+   f, c : Real
+
+inicio
+
+      Escreva ("Qual é a temperatura aqui?")
+      Leia (f)
+      c <- (f-32)/1.8
+      Escreva ("No Brasil estaria ", c:4:1)
+
+fimalgoritmo

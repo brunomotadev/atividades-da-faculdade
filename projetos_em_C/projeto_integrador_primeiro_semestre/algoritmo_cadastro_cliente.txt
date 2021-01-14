@@ -1,0 +1,70 @@
+Algoritmo CADASTRO_CLIENTES
+
+VAR cliente, cnpj, cpf, rg, endereco, bairro, cidade, estado, tipo_pessoa, telefone1, telefone2, email: caractere
+
+inicio
+
+escreva "Para pessoa fisica, digite 1. Para juridica, digite 2:"
+leia tipo_pessoa
+
+	SE tipo_pessoa = 1 ENTAO
+		escreva "digite CPF:"
+		leia "CPF"
+	SE NAO
+		escreva "digite CNPJ:"
+		leia "CNPJ"
+	fimSE
+
+escreva "digite nome do cliente"
+leia cliente
+
+escreva "digite nome da rua/av/trav e numero/complemento:"
+leia endereco
+
+escreva "digite nome do bairro"
+leia bairro
+
+escreva "digite nome da cidade"
+leia cidade
+
+escreva "digite nome do estado"
+leia estado
+
+escreva "digite numero de telefone com DD"
+leia telefone1
+
+escreva "Cliente possui outro numero de telefone para Contato? S/N"
+leia resposta
+	SE resposta = "S" ENTAO
+		escreva "digite segundo numero de telefone com DD"
+		leia telefone2
+	SE NAO
+	fimSE
+
+
+escreva "digite endereco de email:"
+leia email
+
+// EXIBE DADOS DO CLIENTE ABAIXO //
+
+	SE tipo_pessoa = 1 ENTAO;
+		escreva "CPF: ", cpf;
+	SE NAO
+		escreva "CNPJ: ", cnpj;
+	fimSE
+
+escreva "Nome do Cliente: ", cliente;
+escreva "Endereco: ", endereco;
+escreva "Bairro: ", bairro;
+escreva "Cidade: ", cidade;
+escreva "Estado: ", estado;
+escreva "Telefone principal: ",telefone1;
+	SE resposta = "S" ENTAO
+		escreva "Segundo telefone: ", telefone2;
+	SE NAO
+	fimSE
+escreva "Email: ", email;
+
+
+fim
+

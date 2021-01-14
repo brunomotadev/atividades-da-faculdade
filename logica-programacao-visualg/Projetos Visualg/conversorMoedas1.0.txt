@@ -1,0 +1,21 @@
+algoritmo "conversorMoedas1.0"
+
+// Autor : Bruno Mota de Oliveira
+// Data : 22/01/2019
+
+var
+   c, q: Inteiro
+   r, d: Real
+inicio
+// Seção de Comandos
+   c <- 1
+   Escreva("Quantas vezes você quer converter? ")
+   Leia (q)
+   Enquanto (c <= q) faca
+            Escreva("Qual o valor em R$? ")
+            Leia(r)
+            d <- r/2.20
+            EscrevaL("O valor convertido é US$", d:5:2)
+            c <- c + 1
+   FimEnquanto
+fimalgoritmo

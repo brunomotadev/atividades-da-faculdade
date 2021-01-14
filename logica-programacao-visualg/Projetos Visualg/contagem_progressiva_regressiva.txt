@@ -1,0 +1,31 @@
+algoritmo "contagem_progressiva_regressiva"
+
+// Autor : Bruno Mota de Oliveira
+// Data : 22/01/2019
+
+var
+    start, end: Inteiro
+inicio
+// Seção de Comandos
+   EscrevaL ("--------------------")
+   EscrevaL ("Contagem Inteligente")
+   EscrevaL("--------------------")
+
+   EscrevaL ("Inicio: ")
+   Leia(start)
+   EscrevaL ("Fim: ")
+   Leia(end)
+   
+   Se (start < end) entao
+      Enquanto (start <= end) faca
+                  Escreva (start,"... ")
+                  start <- start + 1
+      FimEnquanto
+   Senao
+      Enquanto (start >= end) faca
+                     Escreva (start, "... ")
+                     start <- start - 1
+      FimEnquanto
+   FimSe
+
+fimalgoritmo

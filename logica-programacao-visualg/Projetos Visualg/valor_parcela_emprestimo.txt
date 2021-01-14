@@ -1,0 +1,19 @@
+algoritmo "valor_parcela_emprestimo"
+
+var
+    valor_emprestimo, valor_juros, qntd_parcela, valor_parcela, valor_total: Real
+inicio
+      Escreva ("Qual o valor do empréstimo? ")
+              Leia (valor_emprestimo)
+                   valor_juros <- ((valor_emprestimo * 20)/100)
+                   
+                   valor_total <- valor_juros+valor_emprestimo
+                   
+                      Escreva ("Quantas parcelas? ")
+                              Leia (qntd_parcela)
+                                   valor_parcela <- valor_total/qntd_parcela
+      
+      Escreval ("Vou pagar", qntd_parcela, " parcelas de R$ ", valor_parcela, ". O Valor total será de R$ ", valor_total)
+      Escreval ("O Valor do juros será de R$ ", valor_juros)
+      
+fimalgoritmo

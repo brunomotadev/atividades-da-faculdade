@@ -1,0 +1,23 @@
+algoritmo "repita_soma"
+
+// Autor : Bruno Mota de Oliveira
+// Data : 23/01/2019
+
+var
+       n, s: Inteiro
+       resp: Caractere
+inicio
+// Seção de Comandos 
+   s <- 0
+
+
+   Repita
+            Escreva ("Digite o valor ==> ")
+            Leia (n)
+            s <- s+n
+            Escreva("Você quer continuar? [s/n]")
+            Leia (resp)
+   Ate (resp = "n")
+   EscrevaL("A soma de todos os valores digitados é ", s)
+
+fimalgoritmo

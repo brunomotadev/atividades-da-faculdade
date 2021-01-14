@@ -1,0 +1,25 @@
+algoritmo "verificar_numero_primo"
+// Função : Verificar se um numero é primo ( Numero primo é divisivel apenas por 1 e por ele mesmo).
+// Autor : Bruno Mota de Oliveira
+// Data : 20/02/2019
+
+var
+    contador, numero, contadorDivisiveis: Inteiro
+inicio
+
+      contador <- 1
+      Escreva("Digite um número: ")
+      Leia(numero)
+      Repita
+            //EscrevaL(contador)
+            Se ( numero % contador = 0 ) entao
+               contadorDivisiveis <- contadorDivisiveis + 1
+            FimSe
+            contador <- contador + 1
+      Ate ( contador > numero)
+      Se (contadorDivisiveis > 2) entao
+         EscrevaL ("O valor ", numero," não é primo!")
+      senao
+           EscrevaL ("O valor ", numero, " é primo!")
+      FimSe
+fimalgoritmo

@@ -1,0 +1,20 @@
+algoritmo "somador_repita"
+// Função : somador
+// Autor : Bruno Mota de Oliveira
+// Data : 20/02/2019
+
+var
+   numero, soma: Inteiro
+   resposta: Caractere
+inicio
+      soma <- 0
+
+      Repita
+               Escreva ("Digite o valor ==> ")
+               Leia(numero)
+               soma <- soma + numero
+               Escreva("Você quer continuar? [s/n] ")
+               Leia (resposta)
+       Ate ( resposta = "n")
+      EscrevaL("A soma de todos os valores digitados e ", soma)
+fimalgoritmo

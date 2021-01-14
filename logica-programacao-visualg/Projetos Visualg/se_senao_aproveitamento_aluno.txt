@@ -1,0 +1,45 @@
+algoritmo "aproveitamento_aluno"
+
+// Autor : Bruno Mota de Oliveira
+// Data : 22/01/2019
+
+var
+     n1, n2, media: Real
+inicio
+// Seção de Comandos
+   Escreva("Digite a primeira nota: ")
+   Leia (n1)
+   Escreva("Digite a segunda nota: ")
+   Leia (n2)
+   
+   media <- (n1+n2)/2
+   
+   Se (media >= 9) e (media <= 10) entao
+      Escreval ("Media: ", media)
+      Escreval ("Aproveitamento: A")
+
+      Senao
+           Se (media >= 8) e (media < 9) entao
+              Escreval ("Media: ", media)
+              Escreval ("Aproveitamento: B")
+              senao
+                   Se (media >= 7) e (media < 8) entao
+                      Escreval ("Media: ", media)
+                      Escreval ("Aproveitamento: C")
+                      senao
+                           Se (media >= 6) e (media < 7) entao
+                              Escreval ("Media: ", media)
+                              Escreval ("Aproveitamento: D")
+                              senao
+                                   Se (media >= 5) e (media < 6) entao
+                                      Escreval ("Media: ", media)
+                                      Escreval ("Aproveitamento: E")
+                                      senao
+                                           Escreval("Media: ", media)
+                                           Escreval("Aproveitamento: F")
+                                   FimSe
+                           FimSe
+                   FimSe
+           FimSe
+   FimSe
+fimalgoritmo

@@ -1,0 +1,45 @@
+algoritmo "aluno_maior_nota"
+
+// Autor : Bruno Mota de Oliveira
+// Data : 22/01/2019
+
+var
+   qtde, cont: Inteiro
+   aluno, aluno_maior: Caractere
+   nota, maior: Real
+inicio
+// Seção de Comandos
+Escreval ("------------------------")
+Escreval ("Escola Tallyta Conceição")
+Escreval ("------------------------")
+Escreval (" ")
+
+Escreval ("------------------------")
+Escreval  ("Quantos alunos a turma tem? ")
+Leia(qtde)
+Escreval ("------------------------")
+Escreval (" ")
+
+cont <- 1
+
+      Enquanto (cont <= qtde) faca
+               Escreval ("------------------------")
+               Escreval ("Aluno ", cont)
+               Escreva ("Nome do aluno: ")
+               Leia (aluno)
+               Escreva ("Nota de ", aluno,":")
+               Leia (nota)
+               Escreval ("------------------------")
+               Escreval (" ")
+               
+               Se (nota > maior) entao
+                  maior <- nota
+                  aluno_maior <- aluno
+               FimSe
+               
+               cont <- cont + 1
+      FimEnquanto
+      
+      Escreva("O melhor aproveitamento foi de ", aluno_maior," com a nota ", maior)
+
+fimalgoritmo

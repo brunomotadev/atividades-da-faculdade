@@ -1,0 +1,27 @@
+algoritmo "aluno_aprovado_ou_reprovado"
+
+var
+     n1, n2, media: Real
+inicio
+
+      Escreva ("Digite a primeira nota: ")
+      Leia (n1)
+      Escreva ("Digite a segunda nota: ")
+      Leia (n2)
+      
+      media <- (n1+n2)/2
+      
+      Se (media >= 6) entao
+         Escreval ("Media: ", media)
+         Escreval ("Aluno aprovado")
+         senao
+           Se (media >= 5) e (media < 6) entao
+              Escreval ("Media: ", media)
+              Escreval ("Aluno em Recuperação")
+              senao
+                    Escreval ("Media: ", media)
+                    Escreval ("Aluno reprovado")
+               FimSe
+              FimSe
+fimalgoritmo
+

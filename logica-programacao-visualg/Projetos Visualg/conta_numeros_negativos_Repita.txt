@@ -1,0 +1,21 @@
+algoritmo "contaNegativos"
+// Função :
+// Autor :
+// Data : 20/02/2019
+// Seção de Declarações 
+var
+   numero, contador, totalNegativos: Inteiro
+inicio
+      contador <- 1
+      totalNegativos <- 0
+// Seção de Comandos 
+   Repita
+         Escreva("Digite um numero: ")
+         Leia(numero)
+         Se ( numero < 0 ) entao
+            totalNegativos <- totalNegativos + 1
+         FimSe
+         contador <- contador + 1
+   Ate (contador > 5)
+   EscrevaL("Foram digitados ", totalNegativos, " valores negativos.")
+fimalgoritmo

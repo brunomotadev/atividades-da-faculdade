@@ -1,0 +1,21 @@
+algoritmo "enquanto_numero_salto"
+
+// Autor :  Bruno Mota de Oliveira
+// Data : 22/01/2019
+
+var
+   contador, valor, salto:Inteiro
+inicio
+// Seção de Comandos
+   EscrevaL("Quer contar até que número? ")
+   Leia (valor)
+   
+   EscrevaL("Qual será o valor do salto? ")
+   Leia (salto)
+
+   Enquanto (contador <= valor) faca
+            EscrevaL(contador)
+            contador <- contador + salto
+   FimEnquanto
+   Escreval ("Terminei de contar")
+fimalgoritmo

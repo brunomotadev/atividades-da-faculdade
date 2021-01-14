@@ -1,0 +1,32 @@
+algoritmo "apto_dirigir_cnh"
+
+var
+
+   ano_atual, ano_nasc, resultado: Inteiro
+
+inicio
+
+      Escreval ("-------------------------")
+      Escreval ("Departamento de Trânsito")
+      Escreval ("-------------------------")
+      
+      Escreva ("Ano Atual(yyyy): ")
+      Leia (ano_atual)
+      Escreva ("Ano de Nascimento(yyyy): ")
+      Leia (ano_nasc)
+      
+      resultado <- ano_atual - ano_nasc
+      
+      Se (resultado >= 18) entao
+         Escreval ("Idade: ", resultado)
+         Escreval ("Está apto a tirar CNH")
+      Senao
+           Escreval ("Idade: ", resultado)
+           Escreval ("Não está apto a tirar CNH")
+      FimSe
+           
+           
+      
+
+
+fimalgoritmo

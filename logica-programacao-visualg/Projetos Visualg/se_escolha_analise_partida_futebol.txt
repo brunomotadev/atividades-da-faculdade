@@ -1,0 +1,41 @@
+algoritmo "analise_partida_futebol"
+
+// Autor :  Bruno Mota de Oliveira
+// Data : 22/01/2019
+
+var
+   gol_bang, gol_madu, diferenca: Inteiro
+inicio
+// Seção de Comandos 
+   Escreval("BANGU X MADUREIRA")
+   Escreval("-----------------")
+   Escreval("Quantos gols do BANGU? ")
+   Leia(gol_bang)
+   Escreval("Quantos gols do MADUREIRA? ")
+   Leia(gol_madu)
+   Escreval("-----------------")
+   
+   
+   Se (gol_bang < gol_madu) entao
+      diferenca <- gol_madu-gol_bang
+      Senao
+           diferenca <- gol_bang-gol_madu
+   FimSe
+   
+   Escolha diferenca
+           Caso 0
+                Escreval ("Diferença: ", diferenca)
+                Escreval("Status: Empate")
+           Caso 1, 2, 3
+                Escreval ("Diferença: ", diferenca)
+                Escreval ("Status: Partida Normal")
+           Caso 4,5,6
+                Escreval ("Diferença: ", diferenca)
+                Escreval ("Status: GOLEADA")
+           Caso 7,8,9
+                Escreval ("Diferença: ", diferenca)
+                Escreval ("Status: HUMILHAÇÃO")
+   FimEscolha
+
+
+fimalgoritmo

@@ -1,0 +1,50 @@
+algoritmo "seletor_de_pessoas_aula10"
+// Função : Seletor de Pessoas
+// Autor :  Bruno Mota de Oliveira
+// Data : 21/02/2019
+
+var
+    sexo, opcao, cabelo: Caracter
+    opcao_cabelo,idade, preto, castanho, loiro, ruivo: Inteiro
+inicio
+
+
+
+    Repita
+      Escreva("Qual o sexo? [m/f] ")
+      Leia(sexo)
+      Escreva("Qual a idade? ")
+      Leia(idade)
+      Escreva("Qual a cor do cabelo? ")
+      Escreva("[1] Preto")
+      Escreva("[2] Castanho")
+      Escreva("[3] Loiro")
+      Escreva("[4] Ruivo")
+      Leia(opcao_cabelo)
+
+      Escolha opcao_cabelo
+                     Caso 1
+                          preto <- preto + 1
+                     Caso 2
+                          castanho <- castanho + 1
+                     Caso 3
+                          loiro <- loiro + 1
+                     Caso 4
+                          ruivo <- ruivo + 1
+      FimEscolha
+      
+      Escreva("Quer continuar? [s/n] ")
+      Leia(opcao)
+      
+      Ate( opcao = "n" )
+      
+      EscrevaL("Final:")
+      
+      Se ( (sexo = "m") e ( idade > 18 )) entao
+         Escreva("Total de homens com mais de 18 e cabelos castanhos ",castanho)
+      FimSe
+      
+      Se ( (sexo = "f") e ( idade > 25) e ( idade < 30)) entao
+         Escreva("Total de mulheres entre 25 e 30, e cabelos loiros ",loiro)
+      FimSe
+fimalgoritmo
